@@ -15,10 +15,10 @@ typedef enum : NSUInteger {
     ControlSetUpStrategyButton,
 } ControlSetUpStrategy;
 
-typedef void(^setUpBlock)(UIControl *control);
+typedef void(^SetUpBlock)(UIView *control);
 
 @interface ControlSetUpManager : NSObject
 
-- (void)control:(UIControl *)control setUpWithStrategy:(ControlSetUpStrategy)strategy;
+- (void)control:(UIView *)control setUpWithStrategy:(ControlSetUpStrategy)strategy;
 
 @end
